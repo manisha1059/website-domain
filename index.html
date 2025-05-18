@@ -1,17 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bilgraftin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <title>Bilgraftin – Art & Pen Company</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
   <style>
-    :root {
-      --primary-color: #014421; /* deep emerald */
-      --accent-color: #b87333; /* copper */
-      --bg-color: #f5f5f5;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -19,64 +15,123 @@
     }
 
     body {
-      font-family: 'Playfair Display', serif;
-      background-color: var(--bg-color);
-      color: var(--primary-color);
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .logo-container {
-      max-width: 700px;
+      padding: 2rem 4rem;
     }
 
     .logo {
-      width: 120px;
-      height: auto;
-      margin-bottom: 1rem;
+      font-weight: 800;
+      font-size: 2.5rem;
+      color: #000000; /* Sea Blue */
     }
 
-    h1 {
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h1 {
       font-size: 3rem;
-      color: var(--primary-color);
+      font-weight: 800;
     }
 
-    p {
+    .hero span {
+      background: linear-gradient(90deg, #9ae69c, #4caf50);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtext {
+      margin-top: 1.5rem;
       font-size: 1.1rem;
-      margin-top: 1rem;
       color: #444;
     }
 
-    .coming-soon {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      color: var(--accent-color);
-      font-weight: 500;
+    .features {
+      margin-top: 6rem;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-list {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .feature-item {
+      margin: 1rem 0;
+      font-size: 1rem;
+    }
+
+    .highlight {
+      color: #8b5cf6;
+      font-weight: 600;
+    }
+
+    .tagline {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      color: #1a1a1a;
+      font-weight: 600;
     }
 
     footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      font-size: 0.8rem;
-      color: #888;
+      margin-top: 6rem;
+      padding: 3rem 2rem;
+      background-color: #f3f4f6;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
+
 <body>
-  <div class="logo-container">
-    <img src="logo.png" alt="Bilígraftin Logo" class="logo">
-    <h1>BILGRAFTIN</h1>
-    <p>A Premium Art & Crafts Company</p>
-    <div class="coming-soon">Our website is coming soon. Stay inspired.</div>
-  </div>
+  <header>
+    <div class="logo">Bilgraftin</div>
+  </header>
+
+  <section class="hero">
+    <h1><span>From inspiration to creation.</span><br />Designed for expression</h1>
+    <p class="subtext">
+      Bilgraftin creates premium pens and artistic tools blending modern design with old-world craftsmanship.
+    </p>
+    <p class="tagline">Our website is coming soon. Stay inspired.</p>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Why Bilígraftin?</h2>
+    <div class="feature-list">
+      <p class="feature-item"><span class="highlight">✔ Precision</span> engineered pens with titanium, bismuth, and steel</p>
+      <p class="feature-item"><span class="highlight">✔ Forest-inspired</span> green hues and textures</p>
+      <p class="feature-item"><span class="highlight">✔ Designed</span> for creators, thinkers, and artists</p>
+      <p class="feature-item"><span class="highlight">✔ Refined</span> for comfort and elegance</p>
+      <p class="feature-item"><span class="highlight">✔ Built to last</span> with timeless materials and minimalistic beauty</p>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Bilígraftin. All rights reserved.
+    &copy; 2025 Bilgraftin. All rights reserved.<br>
+    Designed in spirit. Forged in purpose.
   </footer>
 </body>
+
 </html>
